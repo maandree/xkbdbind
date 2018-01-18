@@ -1,0 +1,5 @@
+Depends on
+
+	libxcb
+	xcb-util-keysyms
+	xproto
