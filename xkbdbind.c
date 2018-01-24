@@ -134,7 +134,7 @@ main(int argc, char *argv[])
 		next_e = xcb_poll_for_event(xconn);
 		if (suppress > 0) {
 			suppress = 0;
-			continue;
+			goto next;
 		}
 		switch (e->response_type & ~0x80) {
 		case XCB_KEY_RELEASE:
@@ -157,6 +157,8 @@ main(int argc, char *argv[])
 			}
 			break;
 		}
+	next:
+		free(e);
 	}
 
 	perror(argv0);
