@@ -1,5 +1,20 @@
-Depends on
+NAME
+	xkbdbind - global hotkeys for X
 
-	libxcb
-	xcb-util-keysyms
-	xproto
+SYNOPSIS
+	xkbdbind
+
+DESCRIPTION
+	xkbdbind lets the user configure keybindings to start
+	programs.
+
+	xkbdbind is a configured by the user by editing the
+	config.h source file and recompiling the program. The
+	user shall therefore have a local copy of the software,
+	and a personal installation of it. Thus, xkbdbind is
+	not a program that is top be installed system-wide.
+
+	Download xkbdbind to ~/.local/src/xkbdbind, run make(1)
+	in ~/.local/src/xkbdbind, link ~/.local/bin/xkbdbind to
+	~/.local/src/xkbdbind/xkbdbind, and ~/.local/bin to the
+	PATH environment variable if you haven't alreay.
