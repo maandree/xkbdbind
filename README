@@ -17,4 +17,4 @@ DESCRIPTION
 	Download xkbdbind to ~/.local/src/xkbdbind, run make(1)
 	in ~/.local/src/xkbdbind, link ~/.local/bin/xkbdbind to
 	~/.local/src/xkbdbind/xkbdbind, and ~/.local/bin to the
-	PATH environment variable if you haven't alreay.
+	PATH environment variable if you haven't already.
