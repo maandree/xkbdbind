@@ -123,6 +123,8 @@ main(int argc, char *argv[])
 	size_t i;
 
 	argv0 = argv[0];
+	if (argc > 1 && !strcmp(argv[1], "--"))
+		argc--;
 	if (argc > 1) {
 		fprintf(stderr, "usage: %s\n", argv0);
 		return 1;
