@@ -1,0 +1,10 @@
+PREFIX = /usr
+MANPREFIX = $(PREFIX)/share/man
+
+PACKAGE = xkbdbind
+
+CC = c99
+
+CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700
+CFLAGS   = -Wall -O2 $(CPPFLAGS)
+LDFLAGS  = -lxcb -lxcb-keysyms

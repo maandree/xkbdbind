@@ -1,4 +1,11 @@
+*\#*
 *~
-\#*\#
 *.o
+*.a
+*.lo
+*.so
+*.su
+*.gcov
+*.gcno
+*.gcda
 /xkbdbind
