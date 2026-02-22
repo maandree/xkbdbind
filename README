@@ -8,7 +8,7 @@ DESCRIPTION
 	xkbdbind lets the user configure keybindings to start
 	programs.
 
-	xkbdbind is a configured by the user by editing the
+	xkbdbind is configured by the user by editing the
 	config.h source file and recompiling the program. The
 	user shall therefore have a local copy of the software,
 	and a personal installation of it. Thus, xkbdbind is
@@ -17,4 +17,4 @@ DESCRIPTION
 	Download xkbdbind to ~/.local/src/xkbdbind, run make(1)
 	in ~/.local/src/xkbdbind, link ~/.local/bin/xkbdbind to
 	~/.local/src/xkbdbind/xkbdbind, and add ~/.local/bin to
-	PATthe H environment variable if you haven't already.
+	the PATH environment variable if you haven't already.

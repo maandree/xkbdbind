@@ -13,12 +13,12 @@ xkbdbind: $(OBJ) $(HDR)
 	$(CC) -o $@ $(OBJ) $(LDFLAGS)
 
 .c.o:
-	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CC) -c -o $@ $< $(CFLAGS) $(CPPFLAGS)
 
 install: xkbdbind
-	mkdir -p -- "$(DESTDIR)$(PREFIX)/bin"
-	mkdir -p -- "$(DESTDIR)$(PREFIX)/src/$(PACKAGE)"
-	mkdir -p -- "$(DESTDIR)$(MANPREFIX)/man1"
+	mkdir -p -- "$(DESTDIR)$(PREFIX)/bin/"
+	mkdir -p -- "$(DESTDIR)$(PREFIX)/src/$(PACKAGE)/"
+	mkdir -p -- "$(DESTDIR)$(MANPREFIX)/man1/"
 	cp -- xkbdbind "$(DESTDIR)$(PREFIX)/bin/"
 	cp -- $(OBJ:.o=.c) $(HDR) Makefile "$(DESTDIR)$(PREFIX)/src/$(PACKAGE)/"
 	test ! -e -- "$(DESTDIR)$(PREFIX)/src/$(PACKAGE)/config.mk"

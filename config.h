@@ -3,10 +3,10 @@
 
 /* Column 1: Key to press (definitions are available in /usr/include/X11/keysymdef.h)
  * 
- * Column 2: Modifies to combine with the keypress
+ * Column 2: Modifiers to combine with the keypress
  *           (OR of MOD_SHIFT, MOD_CTRL, MOD_ALT, MOD_HYPER, MOD_SUPER, MOD_ALTGR)
  * 
- * Column 3: Non-zero if the command shall be spawn repeatedly if the key is held down
+ * Column 3: Non-zero if the command shall be spawned repeatedly if the key is held down
  * 
  * Column 4: The command to spawn. Each argument shall be its own string, there is
  *           no shell syntax, and all arguments shall be wrapped in a CMD, e.g.
